@@ -1,0 +1,36 @@
+swiper{
+  height:120px;
+  color: #fff;
+  text-align: center;
+  margin-top: 10px;
+}
+.item{
+  font-size: 20px;
+}
+.bc_green{
+  background-color: #09BB07;
+}
+.bc_red{
+  background-color: #e64340;
+}
+.bc_yellow{
+  background-color: purple;
+}
+.bc_blue{
+  background-color: blue;
+}
+.bc_purple{
+  background-color: purple;
+}
+.bc_aqua{
+  background-color: mediumaquamarine;
+}
+.bc_mediumslateblue{
+  background-color: mediumslateblue;
+}
+.bc_lightseagreen{
+  background-color: lightseagreen;
+}
+.container{
+  margin-top:10px;
+}

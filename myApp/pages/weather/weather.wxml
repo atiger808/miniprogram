@@ -1,0 +1,29 @@
+<!--index.wxml-->
+
+
+<view class="container">
+  <view class='info-view'>
+  <view class="info-weather">
+    <view class="info-title" data-param="{{acode}}">天气</view>
+    <view>日期            天气      昼温     夜温</view>
+    <block wx:for="{{weatherResult}}">
+      <view>{{item.date}}  {{item.dayweather}} {{item.daytemp}} {{item.nighttemp}}</view>
+    </block>
+    </view>
+
+    <view class="info-location">
+    <view class="info-title">位置</view>
+    <view class="info-1">经度：{{longitude}}</view>
+    <view class="info-1">维度：{{latitude}}</view>
+    <view class="info-1">省份：{{province}}</view>
+    <view class="info-1">城市：{{city}}</view>
+    <view class="info-1">区号：{{citycode}}</view>
+    <view class="info-1">辖区：{{district}}</view>
+    <view class="info-1">编码：{{acode}}</view>
+    <view class="info-1">街道：{{township}}</view>
+    <view class="info-1">路名：{{street}}</view>
+    <view class="info-1">地址：{{address}}</view>
+    </view>
+  </view>
+</view>
+

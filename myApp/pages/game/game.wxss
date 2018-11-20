@@ -1,0 +1,108 @@
+/**index.wxss**/
+/* 底 */
+
+.adver-view{
+  width: 100%;
+  height:100rpx;
+}
+.adver-image{
+  width: 200rpx;
+  height:200rpx;
+  border-radius: 50rpx;
+}
+
+.downView{
+  position: fixed;
+  width: 100%;
+  height: 1250rpx;
+  background: rgb(221, 175, 24);
+  margin: 0rpx;
+  text-align: center;
+}
+
+/* 获胜次数 */
+.winNum{
+  padding-top: 40rpx;
+  display: block;
+  font-size: 30rpx;
+  color: #f0f0ee;
+  font-weight: 500;
+}
+
+/* 展示出拳结果 */
+.showView{
+  display: flex;
+  width: 100%;
+  margin-top: 30rpx;
+  height: 200rpx;
+}
+
+.gesturesImgL{
+  height: 180rpx;
+  width: 180rpx;
+  margin-left: 80rpx;
+  border-radius: 80rpx;
+}
+
+.gesturesImgR{
+  height: 180rpx;
+  width: 180rpx;
+  margin-right: 80rpx;
+  border-radius: 80rpx;
+}
+
+.winOrLost{
+  color: orangered;
+  flex: 1;
+  font-size: 40rpx;
+  margin-top: 75rpx;
+}
+
+/* 当 display: flex 配合 justify-content: center 使用时可以让view水平居中
+而配合 align-items: center 用时可以实现垂直居中效果 */
+.win-view{
+  position: fixed;
+  margin-top: 200rpx;
+  text-align: center;
+  /* flex-direction: row; */
+  height:180rpx;
+  width: 100%;
+  
+}
+.win-image{
+  height: 180rpx;
+  width: 180rpx;
+  border-radius:80rpx;
+}
+
+/* 用户出拳 */
+.chooseForUserView{
+  background-color: rgb(243, 243, 243);
+  /* padding: 30rpx; */
+  margin: 12rpx;
+  height:740rpx;
+
+}
+.choose-V{
+  position: fixed;
+  width: 100%;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.choose-image{
+  height: 180rpx;
+  width:  180rpx;
+  border-radius: 80rpx;
+  margin: 3%;
+  
+}
+.btn{
+  margin-top: 400rpx;
+  width: 80%;
+  height:120rpx;
+  text-align: center;
+  /* display: block; */
+  background:rgb(221, 175, 24);
+}

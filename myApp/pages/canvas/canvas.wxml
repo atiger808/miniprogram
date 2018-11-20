@@ -1,0 +1,7 @@
+<view>
+<canvas style="width: 100%; height: 300px; background-color: #32eaf0" canvas-id="firstCanvas" bindtap="btnclick"></canvas>
+</view>
+
+<view class="page-body-wrapper">
+  <canvas canvas-id="canvas" class="canvas"></canvas>
+</view>

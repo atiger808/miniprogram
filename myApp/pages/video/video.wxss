@@ -1,0 +1,15 @@
+.weui-cells{
+  margin-top: 80rpx;
+  text-align: left;
+}
+.weui-label{
+  width: 5em;
+}
+
+.page-body-button {
+  margin-bottom: 30rpx;
+}
+video{
+  padding:20rpx;
+  margin-top: 10rpx;
+}

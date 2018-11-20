@@ -1,0 +1,56 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/weather/weather",
+    "pages/tuya/tuya",
+    "pages/game/game",
+    "pages/form/form",
+    "pages/content/content",
+    "pages/swiper/swiper",
+    "pages/scroll-view/scroll-view",
+    "pages/test/test",
+    "pages/video/video",
+    "pages/mulmedia/mulmedia",
+    "pages/canvas/canvas",
+    "pages/logs/logs",
+    "pages/new/new",
+    "pages/map/map",
+    "pages/wxapp-game"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#b12010",
+    "navigationBarTitleText": "量化投资",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true,
+    "onReachBottomDistance": "20px"
+  },
+  "tabBar": {
+    "borderStyle": "black",
+    "position": "bottom",
+    "backgroundColor": "white",
+    "color": "grey",
+    "selectedColor": "red",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/grey_timg4.jpg",
+        "selectedIconPath": "images/timg4.jpg"
+      },
+      {
+        "pagePath": "pages/map/map",
+        "text": "地图",
+        "iconPath": "images/grey_timg0.jpg",
+        "selectedIconPath": "images/timg0.jpg"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 20000,
+    "connectSocket": 20000,
+    "uploadfile": 20000,
+    "downloadfile": 20000
+  },
+  "debug": true
+}

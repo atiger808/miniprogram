@@ -1,0 +1,65 @@
+<template name="swiper1">
+  <swiper indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="true">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" width="355" height="150"/>
+      </swiper-item>
+    </block>
+  </swiper>
+</template>
+
+<template name="swiper2">
+  <swiper indicator-dots="true" current="0" interval="2000" duration="500" circular="true" previous-margin="0px" display-multiple-items="1" next-margin='0px' autoplay="true" bindchange="change">
+    <navigator url="../form/form">
+    <swiper-item class="item bc_green">Form组件</swiper-item>
+    </navigator>
+    <navigator url="../mulmedia/mulmedia">
+    <swiper-item class="item bc_red">多媒体组件</swiper-item>
+    </navigator>
+    <navigator url="../video/video">
+    <swiper-item class="item bc_blue">视频组件</swiper-item>
+    </navigator>
+    <navigator url="../canvas/canvas">
+    <swiper-item class="item bc_purple">Cancas组件</swiper-item>
+    </navigator>
+    <navigator url="../swiper/swiper">
+    <swiper-item class="item bc_aqua">Swiper组件</swiper-item>
+    </navigator>
+    <navigator url="../content/content">
+    <swiper-item class="item bc_mediumslateblue">图标组件</swiper-item>
+    </navigator>
+    <navigator url="../scroll-view/scroll-view">
+    <swiper-item class="item bc_lightseagreen">Scroll-view组件</swiper-item>
+    </navigator>
+  </swiper>
+</template>
+
+
+  <!-- 图标组件 -->
+  <view class="group">
+    <block wx:for="{{iconSize}}">
+      <icon type="success" size="{{item}}"/>
+    </block>
+  </view>
+
+  <view class="group">
+    <block wx:for="{{iconType}}">
+      <icon type="{{item}}" size="100"/>
+    </block>
+  </view>
+
+  <view class="group">
+    <block wx:for="{{iconColor}}">
+      <icon type="success" size="40" color="{{item}}"/>
+    </block>
+  </view>
+
+<template name="icon1">
+  <!-- 进度条组件 -->
+  <view>
+    <progress percent="100" border-radius="10px" stroke-width="6" show-info="true" active='true' active-mode='backwards' color="#ffaa07" font-size="12px"/>
+    
+    <progress percent="100" active />
+  </view>
+</template>

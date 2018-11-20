@@ -1,0 +1,27 @@
+<!-- 图标组件 -->
+<view class="group">
+  <block wx:for="{{iconSize}}">
+    <icon type="success" size="{{item}}"/>
+  </block>
+</view>
+
+<view class="group">
+  <block wx:for="{{iconType}}">
+    <icon type="{{item}}" size="100"/>
+  </block>
+</view>
+
+<view class="group">
+  <block wx:for="{{iconColor}}">
+    <icon type="success" size="90" color="{{item}}"/>
+  </block>
+</view>
+
+<!-- 进度条组件 -->
+<view>
+  <progress percent="20" show-info />
+  <progress percent="40" border-radius="10px" stroke-width="12" show-info="true" active='true' active-mode='backwards' color="#ffaa07" font-size="20px"/>
+  
+  <progress percent="80" active />
+  <progress percent="90" color="pink" />
+</view>

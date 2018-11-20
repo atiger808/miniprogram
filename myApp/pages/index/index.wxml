@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<view class="header-top">
+  <view style="padding:10px;">
+  <input confirm-type="search" style="margin-left:18px; background-color:white; width:70%; border-radius:4px;" placeholder="输入话题搜索" auto-focus/>
+  </view>
+</view>
+<import src="../template/swiper"/>
+<template is="swiper2" data="{{imgUrls: ['http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg','http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg','http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'],indicatorDots: false,autoplay: true,interval: 3000,duration: 1000}}"/>
+<template is="icon1"/>
+<view class="btn_container">
+      <view class="box box0" bindtap="bindPaint">涂鸦</view>
+      <view class="box box1" bindtap="bindGame">游戏</view>
+      <view class="box box2"bindtap="bindNavTo">动画</view>
+      <view class="box box3"bindtap="bindNavQuery">音乐</view>
+      <view class="box box4"bindtap="bindVideo">视频</view>
+      <view class="box box5"bindtap="bindTest">测试</view>
+</view>
+<view style="width:100%; height:120rpx; text-align:center; line-height:100rpx; border-radius:0rpx; font-size:48rpx; color:white;background-color:#23eeff; margin-top: 460rpx;"><navigator url='../weather/weather'>天气</navigator></view>
+

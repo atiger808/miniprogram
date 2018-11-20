@@ -1,0 +1,17 @@
+小熊科技
+<text>股市浮沉录</text>
+<button type="default">default</button>
+<!-- 数据绑定组件 -->
+<button type="primary" style="background-color:{{color}};" bindtap="btnclick">{{btntext}}</button>
+<!-- 条件渲染 -->
+<text wx:if="{{condition}}">条件1：{{text}}</text>
+<text wx:else>条件2：{{text}}</text>
+<!-- 列表渲染 -->
+<text wx:for="{{['a', 'b', 'c', 'd']}}" wx:for-item="item1" wx:for-index="index1">
+{{index1}}----{{item1}}
+</text>
+
+<!-- 页面引入 -->
+<include src="../template/header.wxml"/>
+<import src="../template/footer.wxml"/>
+<template is="footer2" data="{{text: 'footbar'}}" />

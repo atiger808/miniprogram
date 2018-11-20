@@ -1,0 +1,31 @@
+<!--index.wxml-->
+<view class="downView">
+  <view class='adver-view'>
+    <image class="adver-image" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1542561609882&di=03fcde4b50e4a020f9e7e277c8f2c814&imgtype=0&src=http%3A%2F%2Fpic.9ht.com%2Fup%2F2016-8%2F14725249646716291.gif"></image>
+  <text class="winNum">你已经获胜了<text style="color:red;">{{winNum}}</text>次</text>
+  </view>
+  <view class="showView">
+    <image src="{{imageAiScr}}" class="gesturesImgL"></image>
+    <text class="winOrLost">{{gameResult}}</text>
+    <image src="{{imageUserScr}}" class="gesturesImgR"></image>
+  </view>
+
+  <view class="chooseForUserView">
+    <text class="winNum">出拳吧， 少年</text>
+    <view class="choose-V">
+      <block wx:for="{{srcs}}" wx:key="*this">
+        <view class="choose-view" bindtap="changeForChoose" id="{{index}}">
+          <image class="choose-image" src="{{item}}"></image>
+        </view>
+      </block>
+    </view>
+    <view class="win-view">
+      <image class="win-image" src="{{winImage}}"></image>
+    </view>
+    <view class='view-btn'>
+      <button class="btn" bindtap="againBtn">再来</button>
+    </view>
+  </view>
+  
+  
+</view>

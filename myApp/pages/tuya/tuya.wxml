@@ -1,0 +1,21 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="canvas_area" style="background-color:{{bgcolor}};">
+    <canvas canvas-id='myCanvas' disable-scroll="false" bindtouchstart='touchStart' bindtouchmove='touchMove'/>
+  </view>
+
+  <view class="canvas_tools">
+    <view class="box box1" bindtap="colorSelect" data-param="#6c07f1"></view>
+    <view class="box box2" bindtap="colorSelect" data-param="#0099cc"></view>
+    <view class="box box3" bindtap="colorSelect" data-param="#cc0033"></view>
+    <view class="box box4" bindtap="colorSelect" data-param="#ff9900"></view>
+    <view class="box box5" bindtap="colorSelect" data-param="rgb(236, 10, 225)"></view>
+    <view class="box box6" bindtap="colorSelect" data-param="white"></view>
+  </view>
+  <view class="section section_gap">
+  <text class="section__title">画笔大小</text>
+  <view class="body-view">
+    <slider bindchange="sliderChange" min="1" max="50" show-value/>
+  </view>
+</view>
+</view>

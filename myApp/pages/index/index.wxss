@@ -1,0 +1,52 @@
+/**index.wxss**/
+.page-body-button{
+  width: 100px;
+  height: 80px;
+  margin: 4px;
+  border-radius:10px;
+  box-shadow: 20px #23edff 10px;
+}
+.header-top{
+  width: 100%;
+  background-color:#b12010;
+  height:40px;
+}
+
+.btn_container{
+  color:aliceblue;
+  position:fixed;
+  width: 100%;
+  line-height: 120rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.box{
+  text-align: center;
+  width: 120rpx;
+  height: 120rpx;
+  font-size: 38rpx;
+  border-radius: 50%;
+  background-color: rebeccapurple;
+}
+
+.box1{
+  background-color: #99cccc;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.box2{
+  background-color: #0099cc;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.box3{
+  background-color: #cc0033;
+}
+.box4{
+  background-color: #ff9900;
+}
+.box5{
+  background-color: #cccccc;
+  background-position: center;
+}
